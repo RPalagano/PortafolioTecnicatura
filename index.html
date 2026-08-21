@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="/img/RP.png">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+    <header> <!--- Inicio Header -->
+        <nav class="navbar container">
+
+            <picture class="navbar__logo">
+                <a href="/"><img class="navbar__logo" src="/img/RP.png" alt="logo principal"></a>
+            </picture>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#proyectos">Proyectos</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#sobremi">Sobre mí</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#contacto">Contacto</a>
+                </li>         
+            </ul>
+        </nav>       
+    </header> <!--- Fin Header -->
+
+    <main class="container">
+
+        <article class="presentacion">
+            <section>
+                <div class="presentacion__titulo">
+                    <h1 class="presentacion__titulo_item">Rocío Palagano</h1>
+                </div>
+                <p class="presentacion__subtitulo">Desarrolladora Full Stack</p>
+            </section>
+
+            <ul class="presentacion__link">
+                <li class="presentacion__link_item">
+                    <a class="presentacion__link_front"><img src="/img/logo_linkedin.png" alt="Logo Linkedin"></a>
+                    <a class="presentacion__link_back" href="https://www.linkedin.com/in/rocio-palagano/" target="_blank"><img src="/img/logo_linkedin_color.png" alt="Logo Linkedin"></a>
+                </li>
+                <li class="presentacion__link_item">
+                    <a class="presentacion__link_front"><img src="/img/logo_github.png" alt="Logo GitHub"></a>
+                    <a class="presentacion__link_back" href="https://github.com/RPalagano" target="_blank"><img src="/img/logo_github_color.png" alt="Logo GitHub"></a>
+                </li>     
+            </ul>   
+        </article>
+
+
+        <section class="cuerpo">
+            <article id="proyectos">
+                <h2 class="proyecto__titulo">Proyectos</h2>
+                    
+                <section class="card__proyecto">
+                
+                    <img class="card__proyecto_imagen" src="/img/Proyecto-funko-shop.PNG" alt="Rocío Palagano">
+                
+                    
+                    <article class="card__proyecto_info">
+                        <section class="card__proyecto_descripcion">
+                            <div class="card__proyecto_texto">
+                                <h3 class="card__proyecto_titulo">Funkoshop</h3>
+                                <p class="card__proyecto_parrafo">E-commerce presentado como trabajo final para el curso de Codo a Codo. Se realizó en equipo con otros dos colaboradores.</p>
+                            </div>
+                            <div class="card__proyecto_link">
+                                <li class="presentacion__link_item">
+                                    <a class="presentacion__link_front"><img src="/img/logo_github.png" alt="Logo GitHub"></a>
+                                    <a class="presentacion__link_back" href="https://github.com/RPalagano/Proyecto-Funkoshop" target="_blank"><img src="/img/logo_github_color.png" alt="Logo GitHub"></a>
+                                </li>
+                            </div>
+                        </section>
+                        
+                        <div class="card__proyecto__separacion"></div>
+
+                        <section class="presentacion__herramientas">
+                            <img class="presentacion__herramientas_item" src="/img/logo_css.webp" alt="Logo CSS">
+                            <img class="presentacion__herramientas_item" src="/img/logo_javascript.png" alt="Logo JavaScript">
+                            <img class="presentacion__herramientas_item" src="/img/logo_html.png" alt="Logo HTML">
+                            <img class="presentacion__herramientas_item" src="/img/logo_mysql.png" alt="Logo MySql">
+                            <img class="presentacion__herramientas_item" src="/img/logo_node.png" alt="Logo Node.js">
+                        </section>
+                    </article>     
+
+                </section>    
+            </article>
+
+
+            <article id="sobremi">
+                <h2 class="sobreMi_titulo">Sobre mí</h2>
+                
+
+                <section class="card__sobreMi">
+
+                    <div class="card__sobreMi_texto">
+                        <h3 class="card__sobreMi_titulo">Educación</h3>
+                        <p class="card__sobreMi_parrafo">Actualmente cursando segundo año en Tecnicatura Superior en Desarrollo de Software</p>
+                        <p class="card__sobreMi_parrafo">Curso "Full Stack - Desarrollo Web (JavaScript/Node.JS)"</p>
+                    </div>
+                
+                    <picture class="card__sobreMi_imagen">
+                        <img class="card__fotografia" src="/img/me.jpg" alt="Rocío Palagano">
+                    </picture>
+                    
+                    <div class="card__sobreMi_texto">
+                        <h3 class="card__sobreMi_titulo">Habilidades</h3>
+                        <ul class="card__sobreMi_parrafo card__sobreMi_lista">
+                            <div class="card__sobreMi_parrafo_items">
+                                <li>HTML</li>
+                                <li>JavaScript</li>     
+                                <li>Css</li>
+                                <li>Node.js</li>
+                                <li>MySql</li>
+                                <li>Pyhton</li>
+                                <li>cookie-session</li>
+                            </div>
+                            <div class="card__sobreMi_parrafo_items"> 
+                                <li>C++</li>
+                                <li>MariaDB</li>
+                                <li>Express.js</li>
+                                <li>Sequelize</li>
+                                <li>MVC</li>
+                                <li>GitHub</li>
+                                <li>Bootstrap</li>
+                            </div>
+                        </ul>   
+                    </div>
+
+                </section>
+            
+            </article>
+
+
+            <article id="contacto">
+                <h2 class="sobreMi_titulo">Contacto</h2>
+                
+                <section class="card__contacto">
+                    
+                    <form action = "https://formsubmit.co/77490ab007648db0f09c91dbe54096cc" method="POST"  class="card__formulario">
+                        
+                        <li class="card__contacto_item">
+                            <label class="card__contacto_item_titulo" for="name">Nombre</label>
+                            <input class="card__callisa_estilos" type="text" name="name" id="name">
+                        </li>
+                        
+                        <li class="card__contacto_item">
+                            <label class="card__contacto_item_titulo" for="name">Asunto</label>
+                            <input class="card__callisa_estilos" type="text" name="asunto" id="asunto">
+                        </li>
+
+                        <li class="card__contacto_item">
+                            <label class="card__contacto_item_titulo" for="email">Email</label>
+                            <input class="card__callisa_estilos" type="email" name="email" id="email">
+                        </li>
+
+                        <li class="card__contacto_item">
+                            <label class="card__contacto_item_titulo" for="description">Mensaje</label>
+                            <textarea class="card__callisa_estilos" type="text" name="description"  id="description" rows="6"></textarea>
+                        </li>
+
+                        <li class="card__contacto_item">
+                            <button class="boton" for="">Enviar</button>
+                        </li>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+
+                </section>
+            
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>

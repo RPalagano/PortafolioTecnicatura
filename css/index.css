@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+/* MAIN STYLE*/
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #171717;
+    color: #F2F1EB;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+img{ /*normalizar img*/
+    width: 100%; /*siempre va a tener el 100% del ancho de su contenedor padre*/
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto; /*el bloque se centra*/
+}
+
+/* HEADER*/
+
+header{
+    background-color: #0f0f0f;
+    padding: 1rem 0rem 1rem 0rem;
+    position: sticky; /*Se consulto a la IA para utilizar otra alternativa a fixed*/
+    top: 0;
+
+}
+
+.navbar{
+    display: flex; /*para que se comporten de forma flexible (se pongan uno al lado del otro)*/
+    justify-content: space-between;  /*acomoda uno en una punta y el otro en la otra*/
+    align-items: center; /*lo centra verticalmente*/
+    
+}
+
+.navbar__logo{
+    max-width: 5rem; /*tamaño imagen*/
+
+}
+
+.navbar__menu{
+    display: flex;
+    gap: 5rem;
+    font-size: 1.3rem;
+}
+
+.navbar__item{
+    color: #F2F1EB;
+}
+
+.navbar__link:hover{ /*sombrea cuando se pasa el mouse por arriba*/
+    color: #4ecaa9;
+    
+
+
+}
+
+/* Main */
+
+/* Presentacion */
+.presentacion{
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+}
+
+.presentacion__titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion__titulo_item {
+    font-size: 12rem;
+    display: block;
+    white-space: nowrap; 
+    border-right: 4px solid;
+    width: 10.7ch;
+    color: #b9dfdf;
+    
+    animation: typing 1s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.presentacion__subtitulo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.presentacion__link{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 11%;
+}
+
+.presentacion__link_item{ 
+    width: 3rem;
+}
+
+.presentacion__link_back{
+    display: none;
+}
+
+.presentacion__link_item:hover .presentacion__link_back{
+    display: block;
+
+}
+
+.presentacion__link_item:hover .presentacion__link_front{
+    display: none;
+}
+
+
+.proyecto__titulo{
+    font-size: 5rem;
+    color: #b9dfdf;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+/* Cuerpo */
+
+.cuerpo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Proyectos */
+
+article[id="proyectos"] { /*Se consulto a la IA cómo utilizar un id en específico*/
+    scroll-margin-top: 150px;
+}
+
+.card__proyecto_imagen{
+    border-radius: 30px;
+}
+
+
+.card__proyecto{
+    background-color: #272727;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+
+
+.card__proyecto_info{
+    padding: 3%;
+    
+}
+
+.card__proyecto_descripcion{
+    background-color: #363838;
+    padding: 4%;
+    margin: 3%;
+    border-radius: 30px;
+}
+
+.card__proyecto_titulo{
+    font-size: 2.5rem ;
+    color:   #98cebf;
+}
+
+.card__proyecto_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+
+.card__proyecto_parrafo{
+    font-size: 1.5rem;
+    padding: 4% 2% 2% 2%;
+    color: #c9cfcf;
+
+}
+ 
+
+.card__proyecto_link{
+    display: flex;
+    justify-content: right;
+}
+
+.card__proyecto__separacio{
+    border: solid #b9dfdf;
+}
+
+.presentacion__herramientas{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center; 
+    gap: 5%;
+
+}
+
+.presentacion__herramientas_item{
+    width: 10%;
+
+}
+
+
+ /* Sobre mí */
+
+.sobreMi_titulo{
+    font-size: 5rem;
+    color: #b9dfdf;
+    text-align: center;
+    padding-bottom: 6rem;
+    padding-top: 20%;
+}
+
+.card__sobreMi{
+    background-color: #272727;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px #000000;
+    display: grid;
+    grid-template-columns: 40% 20% 40%; 
+
+}
+
+
+.card__sobreMi_imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card__fotografia{
+    border-radius: 50%;
+    border: solid #b9dfdf;
+}
+
+
+.card__sobreMi_texto{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #363838;
+    padding: 4%;
+    margin: 4%;
+    border-radius: 30px;
+}
+ 
+.card__sobreMi_titulo{
+    font-size: 2.5rem;
+    color:   #98cebf;
+}
+
+.card__sobreMi_parrafo{
+    font-size: 1.5rem;
+    padding: 4% 2% 2% 2%;
+    color: #c9cfcf;
+}
+
+.card__sobreMi_lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.card__sobreMi_parrafo_items{
+   
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+
+ /* Contacto */
+
+.card__contacto{
+    background-color: #272727;
+    border-radius: 30px;
+    display: grid;
+    margin-bottom: 20%;
+    box-shadow: 5px 5px 5px 5px #000000;
+}
+
+.card__formulario{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #363838;
+    padding: 4%;
+    margin: 4%;
+    border-radius: 30px;
+}
+
+.card__contacto_item{
+    font-size: 1.8rem;
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+
+.card__contacto_item_titulo{
+    display: flex;
+    padding-bottom: 2%;
+    color: #98cebf;
+}
+
+.card__callisa_estilos{
+    outline: #4ecaa9;   /* Para sacar el borde del selecionado*/
+    background-color: #272727;
+    border: solid #b9dfdf;
+    border-radius: 4px;
+    padding: 2%;
+    color: aliceblue;
+    border-width: 2px;
+}
+
+.boton{
+    background-color: #b9dfdf;
+    margin-right: 80%;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    border: 0;
+}
+
+.boton:hover{ /*sombrea cuando se pasa el mouse por arriba*/
+    background-color: #4ecaa9;
+    
+
+
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
