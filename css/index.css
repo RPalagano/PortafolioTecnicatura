@@ -205,7 +205,7 @@ article[id="proyectos"] { /*Se consulto a la IA cómo utilizar un id en específ
 }
 
 .presentacion__herramientas{
-    padding-top: 5%;
+    padding-top: 2.5%;
     display: flex;
     justify-content: center; 
     gap: 5%;
